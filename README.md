@@ -1,4 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+#  [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 > Little server providing an api for the nodejs implementation of max-control
 
@@ -11,11 +11,10 @@ $ npm install --save max-control-api
 
 
 ## Usage
+Not ready yet
 
 ```js
 var max-control-api = require('max-control-api');
-
-max-control-api('Rainbow');
 ```
 
 
