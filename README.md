@@ -1,6 +1,7 @@
 #  [![NPM version][npm-image]][npm-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
 > Little server providing an api for the nodejs implementation of max-control
+> The idea is to have an api later, which you can call from the local wifi and view/change data through a mobile client
 
 
 ## Install
