@@ -1,0 +1,38 @@
+{
+  "name": "max-control-api",
+  "version": "0.0.0",
+  "description": "Little server providing an api for the nodejs implementation of max-control",
+  "author": {
+    "name": "Mathias Maier",
+    "email": "hello@mathiasmaier.de",
+    "url": "mathiasmaier.de"
+  },
+  "repository": "MathiasTim/max-control-api",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "max-control-api",
+    "Home automation",
+    "MAX!",
+    "ELV"
+  ],
+  "dependencies": {
+    "hapi": "^8.1.0",
+    "max-control": "git://github.com/sweetpi/max-control"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
