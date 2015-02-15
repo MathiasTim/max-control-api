@@ -3,7 +3,7 @@ var MaxCube = require('max-control');
 var myMaxCube = new MaxCube('192.168.2.111', 62910);
 
 myMaxCube.on('update', function (devices) {
-  console.log(devices);
+  // console.log(devices);
 });
 
 myMaxCube.on('error', function (error) {
@@ -40,6 +40,26 @@ server.route({
   path: '/devices',
   handler: function (request, reply) {
     reply({count: myMaxCube.deviceCount, items: myMaxCube.devices});
+  }
+});
+
+server.route({
+  method: 'POST',
+  path: '/devices/{deviceId}',
+  handler: function (request, reply) {
+    myMaxCube.setTemperature(
+      request.params.deviceId,
+      request.payload.mode,
+      request.payload.temperature,
+      function (error) {
+        if (error) {
+          // add better statuscode
+          reply({error: error.message}).code(400);
+        } else {
+          reply('Ok');
+        }
+      }
+    );
   }
 });
 
